@@ -6,8 +6,14 @@ Imagine a scenario where you're running a `FROM scratch` image but want to exec 
 
 ## Usage
 
+injecto can be run as either a standalone binary or via Docker.
+
 ```
 injecto <image> <container_id>
+```
+
+```
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp joshwget/injecto <image> <container_id>
 ```
 
 ## Example
@@ -29,7 +35,7 @@ exec: \"sh\": executable file not found in $PATH
 Now let's use injecto to inject Alpine.
 
 ```
-> injecto library/alpine:latest 79f7232e5f30
+> docker run -it -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp joshwget/injecto library/alpine:latest 79f7232e5f30
 ```
 
 If you try to exec again, you'll be in a shell!
