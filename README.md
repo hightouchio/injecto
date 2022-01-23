@@ -1,4 +1,5 @@
 # injecto
+![Go Version](https://shields.io/github/go-mod/go-version/hightouchio/passage)
 
 injecto dynamically transfers the contents of an image into a running container, regardless of the base image of the running container.
 
