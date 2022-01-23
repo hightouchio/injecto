@@ -1,6 +1,7 @@
 # injecto
 [![CircleCI](https://circleci.com/gh/hightouchio/injecto/tree/master.svg?style=svg)](https://circleci.com/gh/hightouchio/injecto/tree/master)
 ![Go Version](https://shields.io/github/go-mod/go-version/hightouchio/injecto)
+[![Docker Hub](https://shields.io/docker/v/hightouchio/injecto?label=docker&sort=semver)](https://hub.docker.com/r/hightouchio/injecto)
 
 injecto dynamically transfers the contents of an image into a running container, regardless of the base image of the running container.
 
