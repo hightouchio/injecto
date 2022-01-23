@@ -5,7 +5,6 @@ WORKDIR /app
 COPY ./ ./
 
 RUN GOOS=linux CGO_ENABLED=0 go build \
-  -mod vendor \
   -ldflags "-X main.version=$version" \
   -o ./injecto
 
