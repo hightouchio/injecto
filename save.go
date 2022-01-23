@@ -9,7 +9,7 @@ import (
 	"path"
 
 	"github.com/docker/docker/client"
-	"github.com/joshwget/injecto/tar"
+	"github.com/hightouchio/injecto/tar"
 )
 
 var (
